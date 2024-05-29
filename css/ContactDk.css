@@ -36,14 +36,12 @@ body {
 }
 .wrapper{
     width: 100%;
-    height: 600px;
     margin-top: 70px;
 }
 .content{
     display: flex;
     margin-left: 60px;
     margin-right: 60px;
-    height: 600px;
 }
 .content-left{
     flex: 3;
@@ -52,7 +50,8 @@ body {
 .content-right{
     flex: 1;
     height: 450px;
-    background-color: cadetblue;
+    background-color: #08295c;
+    border-radius: 20px;
 }
 .content h1{
     color: white;
@@ -89,4 +88,67 @@ body {
 }
 .mg-bottom-50{
     margin-bottom: 30px !important;
+}
+.From-Wrapper{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+.content-right input{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #465e84;
+}
+.content-right textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #465e84;
+    resize: none;
+}
+.content-right h3{
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #7994be;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.actions div{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.Clear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccd4dd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5be1e6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.actions h2{
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #465e84;
 }
