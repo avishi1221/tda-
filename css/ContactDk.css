@@ -9,14 +9,18 @@ body {
 .header{
     width: 100%;
     height: 120px;
+    overflow: hidden;
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header img{
+.logo img{
     padding-left: 60px;
     cursor: pointer;
+}
+.menu{
+    display: none;
 }
 .header .right{
     display: flex;
@@ -40,16 +44,16 @@ body {
 }
 .content{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 60px;
     margin-right: 60px;
 }
 .content-left{
     flex: 3;
-    height: 450px;
 }
 .content-right{
+    max-width: 400px;
     flex: 1;
-    height: 450px;
     background-color: #08295c;
     border-radius: 20px;
 }
@@ -151,4 +155,79 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     color: #465e84;
+}
+/* Larger Desktops */
+@media screen and (min-width: 1280px) {
+    /* Not Required */
+}
+/* Laptops */
+@media screen and (max-width: 1279px) and (min-width: 769px) {
+    /* Requires Change of Header */
+}
+/* Tablets */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .header{
+        height: 50px;
+    }
+    .content{
+        align-items: center;
+    }
+    .wrapper{
+        margin-top: 20px;
+    }
+    .content-right{
+        margin: 50px auto;
+      }
+    .content-left{
+        min-width: 86vw;
+    }
+    .right{
+        display: none !important;
+    }
+    .logo img{
+      padding-left: 20px;
+      width: 40px;
+      height: 40px;
+      padding-top: 10px;
+    }
+    .menu{
+      display: block;
+    }
+    .menu img{
+      padding-right: 10px;
+    }
+  
+}
+/* Mobiles */
+@media screen and (max-width: 480px){
+  .header{
+    height: 50px;
+  }
+  .wrapper{
+    margin-top: 20px;
+  }
+  .content{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .content-right{
+    margin-top: 50px;
+  }
+  .right{
+    display: none !important;
+  }
+  .logo img{
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+  }
+  .menu{
+    display: block;
+  }
+  .menu img{
+    padding-right: 10px;
+  }
+
 }
